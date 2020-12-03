@@ -16,7 +16,7 @@ export function PingImage({ isPulsing, ...imgProps }: PingImageProps) {
             : undefined
         }
       />
-      <Image {...imgProps} />;
+      <Image {...imgProps} />
     </div>
   );
 }

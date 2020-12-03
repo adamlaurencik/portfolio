@@ -1,10 +1,12 @@
 import React from "react";
 
-type ButtonProps = {};
+type ButtonProps = {
+  onClick: VoidFunction
+};
 
-export const Button: React.FC = ({ children }) => {
+export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
-    <button className="font-sans h-auto font-bold p-2 rounded-md bg-opacity-50 border-spacePurple border-2 my-2 hover:border-spaceBlack hover:text-spaceBlack">
+    <button onClick={onClick} className="font-sans font-bold py-1 px-2 rounded-md border-2 my-2 text-white text-xl">
       {children}
     </button>
   );

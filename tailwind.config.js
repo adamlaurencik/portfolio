@@ -13,8 +13,17 @@ module.exports = {
       ...theme("colors"),
     }),
     extend: {
-      width: { smallSpace: "300px", bigSpace: "600px" },
-      height: { smallSpace: "300px", bigSpace: "600px" },
+      width: { miniSpace: "270px", smallSpace: "350px", mediumSpace: "600px" },
+      height: { miniSpace: "270px", smallSpace: "350px", mediumSpace: "600px" },
+      rotate: {
+        60: "60deg",
+        120: "120deg",
+      },
+      screens: {
+        miniSpace: "400px",
+        smallSpace: "600px",
+        mediumSpace: "800px",
+      }
     },
   },
   variants: {
