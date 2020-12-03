@@ -63,6 +63,7 @@ export function Technologies() {
                   <Zoom delay={500} triggerOnce={true} >
                     <Image
                       src="/about.jpg"
+                      alt="Adam Laurencik in front of Horseshoe Bend (Arizona)"
                       layout="intrinsic"
                       width={250}
                       height={250}

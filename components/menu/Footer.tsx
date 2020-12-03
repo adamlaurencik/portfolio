@@ -13,6 +13,8 @@ export function Footer() {
       <div className="flex items-center justify-center w-full my-1 text-4xl">
         <a
           className="mx-2 my-1"
+          aria-label="LinkedIn of Adam Laurencik"
+          rel="noopener"
           href="https://www.linkedin.com/in/adam-lauren%C4%8D%C3%ADk-93b02912b/"
           target="_blank"
         >
@@ -24,6 +26,8 @@ export function Footer() {
         <a
           className="mx-2 my-1"
           href="mailto:laurencik.a@gmail.com"
+          aria-label="Send email to Adam Laurencik"
+          rel="noopener"
           target="_blank"
         >
           <FontAwesomeIcon
