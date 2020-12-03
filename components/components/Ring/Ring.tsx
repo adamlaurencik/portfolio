@@ -4,8 +4,7 @@ type RingProps = {
   size: number;
   Images: {
     image: React.ReactElement;
-
-    type?: "top" | "right" | "left" | "bottom";
+    type: "top" | "right" | "left" | "bottom";
   }[];
 };
 
@@ -18,7 +17,7 @@ export const Ring = ({ size, Images }: RingProps) => {
       {Images.map(({ image, type }, index) => (
         <div
           key={index}
-          className={`absolute ${type}-0 -m-4  w-8 h-8  md:-m-5 md:w-10 md:h-12 animate-spin slow-animation reverse-animation`}
+          className={`absolute ${typeToTailwindCSS(type)} -m-4  w-8 h-8  md:-m-5 md:w-10 md:h-12 animate-spin slow-animation reverse-animation`}
         >
           {image}
         </div>
@@ -26,3 +25,13 @@ export const Ring = ({ size, Images }: RingProps) => {
     </div>
   )
 };
+
+
+function typeToTailwindCSS(type:"top" | "right" | "left" | "bottom"){
+  switch(type){
+    case "bottom": return "bottom-0";
+    case "top": return "top-0";
+    case "right": return "right-0";
+    case "left": return "left-0";
+  }
+}
