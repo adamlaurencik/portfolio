@@ -49,7 +49,7 @@ export function Technologies() {
             <Roll triggerOnce={true} delay={2000}>
               <TraitTab
                 title="Responsive"
-                desc="Apps that fits all screen sizes."
+                desc="Apps that fit all screen sizes."
                 icon={faMobileAlt}
               />
             </Roll>
