@@ -17,7 +17,7 @@ export const Ring = ({ size, Images }: RingProps) => {
       {Images.map(({ image, type }, index) => (
         <div
           key={index}
-          className={`absolute ${typeToTailwindCSS(type)} -m-4  w-8 h-8  md:-m-5 md:w-10 md:h-12 animate-spin slow-animation reverse-animation`}
+          className={`absolute ${typeToTailwindCSS(type)} -m-4  w-8 h-8  md:-m-5 md:w-10 md:h-10 animate-spin slow-animation reverse-animation`}
         >
           {image}
         </div>
