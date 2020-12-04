@@ -60,7 +60,7 @@ export function Technologies() {
             <div className="flex content-center justify-center items-center flex-col flex-grow py-6">
               <div className="text-center mx-8 my-2 max-w-xl flex items-center justify-center flex-col lg:flex-col">
                 <div className="">
-                  <Zoom delay={500} triggerOnce={true} >
+                  <Zoom delay={500} triggerOnce={true}>
                     <Image
                       src="/about.jpg"
                       alt="Adam Laurencik in front of Horseshoe Bend (Arizona)"
@@ -77,10 +77,10 @@ export function Technologies() {
                 <p className="max-w-md mx-4 my-2">
                   Software development has been my passion since childhood. My
                   programming journey started at the age of 12 with a simple
-                  "Hello World" PASCAL program, which was a spark to my computer
-                  science curiosity. I am skilled in UI development and
+                  "Hello World" PASCAL program, which was a spark to my
+                  computer-science curiosity. I am skilled in UI development and
                   algorithms and currently gaining knowledge about machine
-                  learning and artificial inteligence.
+                  learning and artificial intelligence.
                 </p>
               </div>
             </div>
