@@ -1,6 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import {useEffect} from "react";
+import ReactGA from 'react-ga'
+
+declare global {
+  interface Window { GA_INITIALIZED?: boolean; }
+}
 
 export default class CustomDocument extends Document {
+
+  componentDidMount(){
+    if(!(window.GA_INITIALIZED as boolean) && process.env.NODE_ENV === "production"){
+      ReactGA.initialize('G-HBYSJNW3PZ')
+      window.GA_INITIALIZED = true;
+    }
+  }
 
   render() {
     return (
